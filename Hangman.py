@@ -1,9 +1,7 @@
-#Step 5
+
 
 import random
 from hangman_words import word_list
-
-#TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
 
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
@@ -13,10 +11,10 @@ lives = 6
 guessed_letter = []
 from hangman_art import logo
 print(logo)
-#Testing code
-print(f'Pssst, the solution is {chosen_word}.')
 
-#Create blanks
+
+
+
 display = []
 for _ in range(word_length):
     display += "_"
@@ -60,6 +58,6 @@ while not end_of_game:
     from hangman_art import stages
     print(stages[lives])
   
-  #TODO-2: - Import the stages from hangman_art.py and make this error go away.
+  
     
   
